@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <style>
+        body {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+            width: 240px;
+            padding: 12px;
+            background: #0b0b0b;
+            color: #fff;
+        }
+        
+        h3 {
+            margin: 0 0 8px;
+            font-size: 14px;
+        }
+        
+        .row {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 10px 0;
+        }
+        
+        input[type="checkbox"],
+        input[type="range"] {
+            cursor: pointer;
+        }
+        
+        .note {
+            font-size: 11px;
+            opacity: 0.7;
+            margin-top: 6px;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>TabMind Settings</h3>
+
+    <div class="row">
+        <span>Timer</span>
+        <input type="checkbox" id="timerToggle" checked />
+    </div>
+
+    <div class="row">
+        <span>Reason Pill</span>
+        <input type="checkbox" id="pillToggle" checked />
+    </div>
+
+    <div class="row">
+        <span>Per-site</span>
+        <input type="checkbox" id="siteToggle" />
+    </div>
+
+    <div class="row">
+        <span>Pill Opacity</span>
+        <input type="range" id="opacityRange" min="40" max="100" value="100" />
+    </div>
+
+    <div class="note">Snooze button is on the pill 😴</div>
+
+    <script src="popup.js"></script>
+</body>
+
+</html>
